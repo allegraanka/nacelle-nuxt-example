@@ -9,6 +9,7 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
+    "@nacelle/client-js-sdk": "^3.6.0",
     "@nacelle/shopify-checkout": "^0.0.7",
     "@nacelle/vue": "^0.0.13",
     "@nuxtjs/composition-api": "^0.29.0",

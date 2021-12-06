@@ -81,6 +81,9 @@ export default {
       storefrontCheckoutToken: process.env.SHOPIFY_STOREFRONT_CHECKOUT_TOKEN,
       myshopifyDomain: process.env.MYSHOPIFY_DOMAIN,
       storefrontApiVersion: process.env.STOREFRONT_API_VERSION
+    },
+    googleAnalytics: {
+      id: process.env.GOOGLE_ANALYTICS_ID // added for GA implementation in Nuxt
     }
   },
 
@@ -88,8 +91,15 @@ export default {
   buildModules: [
     '@nuxt/image',
     '@nuxtjs/composition-api/module',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/google-analytics' // added for GA implementation in Nuxt
   ],
+
+  googleAnalytics: {
+    id: process.env.GOOGLE_ANALYTICS_ID, // added for GA implementation in Nuxt
+    checkDuplicatedScript: true, // detects if any analytics script has been added in the HTML
+    debug: true // enables GA debug mode
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],

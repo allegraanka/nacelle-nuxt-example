@@ -4,7 +4,6 @@
       <img src="/nacelle-logo.svg" />
     </div>
     <h1>Welcome to your Nacelle Storefront</h1>
-    <p>Edit <code class="inline-code">pages/index.vue</code> to get started.</p>
     <p>
       For help on how to build your storefront,
       <a href="https://docs.getnacelle.com/nuxt/intro-nuxt.html" target="none"
